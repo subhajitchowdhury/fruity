@@ -1,0 +1,15 @@
+ .container {
+  position: relative;
+}
+
+.topright {
+  text-align: right;
+}
+
+.center {
+   text-align: center;
+}
+
+.bottomleft {
+ text-align: left;
+}

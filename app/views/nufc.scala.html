@@ -1,0 +1,13 @@
+@import scala.collection.immutable.TreeMap
+
+@(nufcFivePlayers:TreeMap[String,String])
+
+@main("NEWCASTLE") {
+<h1>NEWCASTLE UNITED FC</h1>
+
+<p> Favourite Players</p>
+<table border="1" cellpadding="30">
+@for((index,players) <- nufcFivePlayers){<tr><td>@index</td><td>@players</td></tr>}
+</table>
+}
+

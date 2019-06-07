@@ -1,0 +1,35 @@
+@(myResult: String,bestFootballers: Seq[String],bestCricketers: Seq[String],myBoolean: Boolean)
+
+@main("Welcome to my app") {
+<h1>  Fruits I will eat today:
+  <ul>
+    <li>Apple</li>
+    <li>Pear</li>
+    <li>Banana</li>
+  </ul>
+</h1>
+<div class="container">
+  <br>
+  <div class="topright">Top Right</div>
+  <br>
+  <br>
+  <div class="center">Center</div>
+  <br>
+  <br>
+  <div class="bottomleft">Bottom Left</div>
+  <br>
+</div>
+
+<p>My result is: @myResult</p>
+<p><b>FOOTBALLERS</b></p>
+@for(footballers <- bestFootballers){<p>@footballers</p>}
+<p><b>CRICKETERS</b></p>
+@bestCricketers.map{ cricketers=>
+@cricketers}
+<br>
+<br>
+@myBoolean.toString.toUpperCase()
+<p>
+<a href="/liverpoolfc">LiverpoolFC</a>
+</p>
+}
